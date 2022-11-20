@@ -1,0 +1,139 @@
+.nav-link {
+    margin-left: 2em;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  
+  .nav-link:hover {
+    transform: scale(0.9);
+    transition: 0.15s;
+  }
+
+
+  .foto
+{
+    width:300px;
+    height: 200px;
+    border-radius: 2em;
+}
+.h1{
+  color:aquamarine;
+}
+.titulo{
+  color: aquamarine;
+  text-align: center;
+}
+.letra1{
+  text-align: justify;
+
+}
+.imagen{
+  width: 270px;
+  height: 170px;
+}
+.form{
+  background-color: #fff;
+  margin: auto;
+}
+.form{
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+}
+.form_title{
+  font-size: 2rem;
+  margin-bottom: .5em;
+  
+}
+.form_container{
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+
+
+}
+.form_group{
+  position: relative;
+  
+}
+.form_input{
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  padding: .6em 3em;
+  background-color: rgb(206, 255, 249);
+  border: blue;
+ 
+
+}
+.form_submit{
+
+  color:blue;
+  background-color:rgb(206, 255, 249);
+  border:royalblue ;
+}
+.form_label{
+  color: blue;
+}
+.pie-pagina{
+  width: 100%;
+  background-color:rgb(206, 255, 249);
+
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color:aqua;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: dodgerblue;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration:none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: blue;
+  margin-right: 10px;
+  background-color:#fff;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-2{
+  
+  padding: 15px 10px;
+  text-align: center;
+  color:aqua;
+}
+.compra{
+  text-decoration: none;
+  border-radius: 50px 50px;
+  padding: 1em 1em 1em 1em;
+  background-color: aqua;
+  color: cadetblue;
+
+}
+
