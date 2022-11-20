@@ -1,0 +1,687 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Styles for Sliders Ropa/Zapatillass/Videojuegos */
+
+.titulo-slider{
+    text-align: center;
+}
+
+.parrafo-slider{
+    text-align: center;
+}
+
+#slider-section{
+    max-width: 1200px;
+    width:90%;
+    margin: auto;
+    margin-top: -2em;
+    padding:0%;
+    margin-top:  -18em;
+}
+#slider-section h3{
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.slider-box{
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.slider-box-img{
+    width: 100%;
+    display: flex;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-box-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(7, 7, 7,0.4) 0%, rgba(33,33,33,0) 100%);
+    z-index: 1;
+ }
+.slider-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.slider-bidder{
+    position: absolute;
+    left: 10px;
+    bottom:0px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.slider-bidder-img img{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -15px;
+}
+.slider-bidder-img img:nth-child(1){
+    margin-left: 0px;
+}
+
+.slider-bidder span{
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+.slider-box-img .owner-img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.slider-box-img .owner-img img{
+    border-radius: 50%;
+}
+.slider-box-img .owner-img i{
+    position: absolute;
+    right: -3px;
+    bottom: -5px;
+    color: #1fec8d;
+    z-index: 3;
+    background-color: #ffffff;
+    border-radius:55%;
+}
+.slider-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 15px;
+    padding-bottom: 5px;
+}
+.slider-box-text a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.slider-box-text .highest-bid{
+    color: #5e5e5e;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.slider-box-text .price{
+    color: rgb(206, 255, 249);
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.price-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.price-like a{
+    color: red;
+}
+
+.swiper-pagination{
+    margin-bottom: 24em;
+}
+
+/* Products slider 3 */
+
+h4, h2, small, a{
+  margin: 0;
+  padding: 0;
+}
+
+.Carousel {
+  width: 100%;
+  margin:  0px 70px;
+}
+
+.Carousel h2 {
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.slick-list{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 240px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 black;
+    transition: .3s ease-in-out;
+}
+
+.slick a img:hover{
+    opacity: .85;
+}
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 30px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow i{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,0.7);
+}
+
+.slick-prev{
+    left: 0px;
+}
+
+.slick-next{
+    right: 0px;
+}
+
+.img-forma{
+    padding: 2%;
+}
+
+/* Teachers Ingenier Software */
+
+.teachers-general {
+  background-color: aliceblue;
+  height: 69em;
+}
+
+.teacher-intro {
+  text-align: center;
+  background-color: rgb(209, 255, 255);}
+.intro-teacher {
+  font-size: 4em;
+  font-style: italic;
+}
+.parrafo-teacher {
+  font-size: 2em;
+}
+
+.box-teachers{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+
+#card-left {
+  margin-left: 15em;
+  margin-top: 3em;
+}
+
+.card-teachers{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.card-teachers:before,
+.card-teachers:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index:-1;
+}
+.card-teachers:hover:before{
+transform: rotate(20deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card-teachers:hover:after{
+transform: rotate(10deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card-teachers .imgBx{
+position: absolute;
+top: 10px;
+left: 10px;
+bottom: 10px;
+right: 10px;
+background: #222;
+transition: 0.5s;
+z-index: 1;
+}
+
+.imgBx:hover
+{
+  bottom: 80px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.details h2{
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ font-size: 20px;
+ color: #777;
+ text-transform: uppercase;
+} 
+
+.details h2 span{
+font-weight: 500;
+font-size: 16px;
+color: #f38695;
+display: block;
+margin-top: 5px;
+ } 
+
+/* Cards info Cursos Online */
+
+a{
+    text-decoration: none;
+  }
+  .hero-unit {
+    height: 850px;
+    background: url(https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center ;
+    background-size: cover;
+    filter: brightness(100%);
+    position: relative;
+  }
+  .hero-unit::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .h4-card {
+  color: white;
+  position: relative
+  }
+  .hero-unit h1,
+  .hero-unit h2,
+  .hero-unit h3,
+  .hero-unit h4,
+  .hero-unit h5,
+  .hero-unit h6 {
+    color: white;
+  }
+  .hero-unit h1 {
+    font-weight: bold;
+  }
+  .hero-unit hgroup {
+    margin: 5.5rem 0;
+  }
+  .hero-unit .card-icon {
+    display: block;
+    margin: 0.5rem auto 0;
+    font-size: 3.4rem;
+    color: white;
+  }
+  .hero-unit .clients {
+    margin: 2rem auto;
+  }
+  .hero-unit .clients a {
+    color: white;
+  }
+  .clients .fa-stack-2x {
+    color: gray;
+  }
+  .clients:hover .fa-stack-2x {
+    color: #333333;
+  }
+
+  .descrip-cards2 {
+    font-style: italic;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  
+  .button.large {
+    margin: 0;
+    padding: 3rem;
+  }
+  .button.large a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-top: 5rem;
+  }
+
+  .panel i {
+    display: block;
+    float: left;
+    width: 20%;
+    opacity: 0.5;
+  }
+  .panel a, 
+  .panel p, 
+  .panel small {
+    width: 95%;
+    float: right;
+  }
+  .panel a {
+    margin-bottom: 0.5rem;
+  }
+  .panel small {
+    margin-top: -0.5rem;
+    font-style: italic;
+  }
+  .flip-cards {
+    float: left;
+    width: 99%;
+    height: 99%;
+    padding-left: 1em;
+  }
+  
+  .flip-cards li {
+    float: left;
+    width: 33.3%;
+    height: 180px;
+    position: relative;
+    padding: 0;
+  }
+  
+  .flip-cards li:hover {
+    cursor: pointer;
+  }
+  
+  .flip-cards li:hover .card-front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: perspective(1000) rotateY(180deg);
+    -moz-transform: perspective(1000) rotateY(180deg);
+    -ms-transform: perspective(1000) rotateY(180deg);
+    -o-transform: perspective(1000) rotateY(180deg);
+    transform: perspective(1000) rotateY(180deg);
+  }
+  
+  .flip-cards li:hover .card-back {
+    z-index: 950;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform: perspective(1000) rotateY(0deg);
+    -moz-transform: perspective(1000) rotateY(0deg);
+    -ms-transform: perspective(1000) rotateY(0deg);
+    -o-transform: perspective(1000) rotateY(0deg);
+    transform: perspective(1000) rotateY(0deg);
+  }
+  
+  .flip-cards .card-front,
+  .flip-cards .card-back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform .5s;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .flip-cards .card-front {
+    -webkit-transform: perspective(1000) rotateY(0);
+    -moz-transform: perspective(1000) rotateY(0);
+    -ms-transform: perspective(1000) rotateY(0);
+    -o-transform: perspective(1000) rotateY(0);
+    transform: perspective(1000) rotateY(0);
+    z-index: 900;
+  }
+  
+  .flip-cards .card-back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 800;
+  }
+  
+  /* Button Card Colors */
+  .flip-cards .panel {
+    border: none;
+  }
+  
+  .flip-cards .panel i,
+  .flip-cards .panel p,
+  .flip-cards .panel a,
+  .flip-cards .panel small {
+    color: white;
+  }
+  
+  /* First button color */
+  .flip-cards li:first-child > .button {
+    background-color: rgba(40, 57, 77, 0.8);
+  }
+  .flip-cards li:first-child > .panel {
+    background-color: rgba(40, 57, 77, 0.8);
+  }
+  
+  /* Second button color */
+  .flip-cards li:nth-child(2) > .button {
+    background-color: rgba(185, 255, 72, 0.507);
+  }
+  .flip-cards li:nth-child(2) > .panel {
+    background-color: rgba(185, 255, 72, 0.507);
+  }
+  
+  /* Third button color */
+  .flip-cards li:nth-child(3) > .button {
+    background-color: rgba(211, 81, 45, 0.8);
+  }
+  .flip-cards li:nth-child(3) > .panel {
+    background-color: rgba(211, 81, 45, 0.8);
+  }
+  
+  /* Fourth button color */
+  .flip-cards li:nth-child(4) > .button {
+    background-color: rgba(235, 167, 36, 0.8);
+  }
+  .flip-cards li:nth-child(4) > .panel {
+    background-color: rgba(235, 167, 36, 0.8);
+  }
+  
+  /* Fifth button color */
+  .flip-cards li:nth-child(5) > .button {
+    background-color: rgba(75, 135, 150, 0.8);
+  }
+  .flip-cards li:nth-child(5) > .panel {
+    background-color: rgba(75, 135, 150, 0.8);
+  }
+  
+  /* Sixth (last) button color */
+  .flip-cards li:last-child > .button {
+    background-color: rgba(100, 66, 87, 0.8);
+  }
+  .flip-cards li:last-child > .panel {
+    background-color: rgba(100, 66, 87, 0.8);
+  }
+
+
+/* Pié de páginar */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+.footer{
+   background-color: #0a141d;
+    
+    padding: 70px 0;
+}
+
+.footer-seccion{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-seccion>img{
+    border-radius: initial;
+}
+
+.footer-seccion h4{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-seccion ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-seccion ul li a:hover{
+    color: rgb(206, 255, 249);
+    padding-left: 8px;
+}
+
+.footer-seccion .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(241, 235, 235);
+    margin:0 20px 40px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.footer-seccion .social a:hover{
+    color: gray;
+    background-color: rgb(206, 255, 249);
+    
+}

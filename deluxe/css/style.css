@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+.footer{
+   background-color: #0a141d;
+    
+    padding: 70px 0;
+}
+
+.footer-seccion{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-seccion>img{
+    border-radius: initial;
+}
+
+.footer-seccion h4{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-seccion ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-seccion ul li a:hover{
+    color: rgb(206, 255, 249);
+    padding-left: 8px;
+}
+
+.footer-seccion .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(241, 235, 235);
+    margin:0 20px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.footer-seccion .social a:hover{
+    color: gray;
+    background-color: rgb(206, 255, 249);
+    
+}
