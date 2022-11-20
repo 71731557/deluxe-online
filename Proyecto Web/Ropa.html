@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa</title> <link rel="shortcut icon" href="./Img/icon-pag.jpeg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="ropa.css">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:rgb(206, 255, 249) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../BLOQUE PRINCIPAL/proyecto-lenguaje.html"><img src="./Img/logo-deluxe.jpeg" alt="" height="75"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../BLOQUE PRINCIPAL/proyecto-lenguaje.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Secciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color:rgb(206, 255, 249) ;">
+                        <li><a class="dropdown-item" href="../Proyecto Web/Ropa.html">Sección Ropa</a></li>
+                        <li><a class="dropdown-item" href="">Sección Calzado</a></li>
+                        <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/index.html">Cinema HUB</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../deluxe/atencion.html" tabindex="-1" aria-disabled="true">Contáctos</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#"><img id="verCarrito" src="/Img/carrito.png " alt="" height="50"><span id="cantidadCarrito" class="cantidadCarrito"></span></a>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+          </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <!--Titulo principal de la tienda-->
+    <div class="titulos21">
+        <h1 id="titulo-1" style="color:rgb(68, 68, 68) ;">SECCION ROPA</h1>
+        <h2 id="parrafo-1" style="color: rgb(68, 68, 68);">TENEMOS LAS MARCAS MÁS RECONOCIDAS DE TODO EL PERÚ</h2>
+    </div>
+    <br><br><br><br><br>
+    <!--Slider y sus botones-->
+
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="Img/img1.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <a href="#Gucci" class="slider__link">VER</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="Img/img2.jpg" alt="" class="slider__img ">
+                <div class="slider__content">
+                    <a href="#Jordan" class="slider__link">VER</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="Img/img3.jpeg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <a href="#Nike" class="slider__link">VER</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="Img/img4.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <a href="#Adidas" class="slider__link">VER</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>    
+    <br><br><br><br><br><br>
+    
+    <!--Apartado de Ropa Marca Nike-->
+
+    <section clase="container-products" id="Nike">
+        <div class="container">
+            <div class="row" id="bloque-1">
+                <h2 class="mark__title">Nike</h2>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product" id="product">
+                    <img src="Img/nike-1.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.150</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/nike-2.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.180</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/nike-3.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.175</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/nike-4.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.125</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/nike-5.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.220</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/nike-6.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.140</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+            
+    </section>
+    <br><br><br><br><br>    
+
+
+    <!--Apartado de Ropa Marca Adidas-->
+
+
+    <section id="Adidas">
+        <div class="container">
+            <div class="row" id="bloque-2">
+                <h2 class="mark__title">Adidas</h2>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-1.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.230</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-2.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.160</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-3.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.190</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-4.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.200</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-5.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.140</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/adidas-6.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.177</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>        
+    </section>
+    <br><br><br><br><br>
+
+
+    <!--Apartado de Ropa Marca Gucci-->
+
+
+    <section id="Gucci">
+        <div class="container">
+            <div class="row" id="bloque-3">
+                <h2 class="mark__title">Gucci</h2>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-1.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.255</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-2.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.246</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-3.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.275</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-4.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.185</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-5.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.260</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/gucci-6.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.178</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div> -->
+            </div>
+        </div> 
+    </section>
+    <br><br><br><br><br>
+
+    <!--Apartado de Ropa Marca Jordan-->
+
+    <section id="Jordan">
+        <div class="container">
+            <div class="row" id="bloque-4">
+                <h2 class="mark__title">Jordan</h2>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-1.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.300</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-2.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.241</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-3.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.256</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-4.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.275</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-5.jpg" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.220</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 img-fluid product">
+                    <img src="Img/jordan-6.webp" alt="" class="product__img">
+                    <br>
+                    <div class="product__description">
+                        <span class="product__price">s/.286</span> <br>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div> -->
+            </div>
+        </div> 
+    </section>
+    <br><br><br><br>
+
+    <!--contedio del modal-->
+    <div id="modal-container" class="modal-container"></div>
+
+    <!--Pie de pagina-->
+
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../BLOQUE PRINCIPAL/proyecto-lenguaje.html">
+                        <img src="./Img/logo-deluxe.jpeg"    alt="No hay no existe">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, quam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, cum.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://pe.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Copyright</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <!--Enlaces a los scripts-->
+
+    
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/FuncionDelCarrito.js"></script>
+</body>
+</html>
