@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa</title> <link rel="shortcut icon" href="./Img/icon-pag.jpeg">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+    <title>Ropa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./Img/icon-pag.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
 
@@ -19,11 +22,12 @@
     <!--Barra de navegacion-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:rgb(206, 255, 249) ;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./Img/logo-deluxe.jpeg" alt="" height="75"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
+            <a class="navbar-brand" href="#"><img src="./Img/logo-deluxe.jpeg" alt="" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -32,29 +36,73 @@
                         <a class="nav-link active" href="#">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Secciones
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Secciones
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color:rgb(206, 255, 249) ;">
-                        <li><a class="dropdown-item" href="./Ropa.html">Sección Ropa</a></li>
-                        <li><a class="dropdown-item" href="../LENGUAJE 2.0/akane.html">Sección Calzado</a></li>
-                        <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/cinema.html">Cinema HUB</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"
+                            style="background-color:rgb(206, 255, 249) ;">
+                            <li><a class="dropdown-item" href="./Ropa.html">Sección Ropa</a></li>
+                            <li><a class="dropdown-item" href="../LENGUAJE 2.0/akane.html">Sección Calzado</a></li>
+                            <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/cinema.html">Cinema HUB</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../deluxe/atencion.html" tabindex="-1" aria-disabled="true">Contáctos</a>
+                        <a class="nav-link active" href="../deluxe/atencion.html" tabindex="-1"
+                            aria-disabled="true">Contáctos</a>
+                    </li>
+
+                </ul>
+                <a class="navbar-brand" href="#"><img id="verCarrito" src="./Img/carrito.png " alt="" height="50"><span
+                        id="cantidadCarrito" class="cantidadCarrito"></span></a>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!--Aqui esta lo nuevo del nav-->
+                    <li class="nav-item">
+                        <a class="nav-link me-auto active" href="#">Acceder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-auto active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#RegistroModal">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-auto active" href="#">Cerrar Sesión </a>
                     </li>
                 </ul>
-                <a class="navbar-brand" href="#"><img id="verCarrito" src="./Img/carrito.png " alt="" height="50"><span id="cantidadCarrito" class="cantidadCarrito"></span></a>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info" type="submit">Buscar</button>
-                </form>
-          </div>
+            </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Titulo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="Registro-form">
+                        <div class="form-group">
+                            <input type="text" id="Registro-email" class="form-control" placeholder="Correo" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" id="Registro-contraseña" class="form-control"
+                                placeholder="contraseña" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <br><br><br><br><br>
     <!--Titulo principal de la tienda-->
     <div class="titulos21">
@@ -93,9 +141,9 @@
         </div>
         <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-    </div>    
+    </div>
     <br><br><br><br><br><br>
-    
+
     <!--Apartado de Ropa Marca Nike-->
 
     <section clase="container-products" id="Nike">
@@ -152,9 +200,9 @@
                 </div> -->
             </div>
         </div>
-            
+
     </section>
-    <br><br><br><br><br>    
+    <br><br><br><br><br>
 
 
     <!--Apartado de Ropa Marca Adidas-->
@@ -213,7 +261,7 @@
                     </div>
                 </div> -->
             </div>
-        </div>        
+        </div>
     </section>
     <br><br><br><br><br>
 
@@ -274,7 +322,7 @@
                     </div>
                 </div> -->
             </div>
-        </div> 
+        </div>
     </section>
     <br><br><br><br><br>
 
@@ -333,7 +381,7 @@
                     </div>
                 </div> -->
             </div>
-        </div> 
+        </div>
     </section>
     <br><br><br><br>
 
@@ -348,7 +396,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="./Img/logo-deluxe.jpeg"    alt="No hay no existe">
+                        <img src="./Img/logo-deluxe.jpeg" alt="No hay no existe">
                     </a>
                 </figure>
             </div>
@@ -374,11 +422,69 @@
 
     <!--Enlaces a los scripts-->
 
-    
-    <script src="./js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/productos.js"></script>
     <script src="./js/carrito.js"></script>
     <script src="./js/FuncionDelCarrito.js"></script>
+    <script src="./js/main.js"></script>
+
+
+    <!--FIREBASE SCRIPT-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCVHLw9DON9-6-fj5Wf3jXoNyNqZNnwJaw",
+            authDomain: "fb-registro-cb170.firebaseapp.com",
+            projectId: "fb-registro-cb170",
+            storageBucket: "fb-registro-cb170.appspot.com",
+            messagingSenderId: "957785835940",
+            appId: "1:957785835940:web:8b2329c4e9aa4a69f25931"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // Initialize Firebase Authentication and get a reference to the service
+        const auth = getAuth(app);
+        const RegistroForm = document.querySelector("#Registro-form");
+
+        RegistroForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const email = document.querySelector("#Registro-email").value;
+            const password = document.querySelector("#Registro-contraseña").value;
+            
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // clear the form
+                RegistroForm.reset();
+                // Signed in 
+                const user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+
+            console.log(email, password)
+
+
+
+        })
+        
+
+
+    </script>
 </body>
+
 </html>
