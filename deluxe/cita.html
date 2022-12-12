@@ -8,7 +8,13 @@
     <title>SOLICITA UNA CITA</title>
     <link rel="stylesheet" href="./css/cita.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--TOASTIFY JS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="../Proyecto Web/js/main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/5e72172778.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito&display=swap" rel="stylesheet">
@@ -18,69 +24,139 @@
     <!-- MENU DE NAVEGACION -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:rgb(206, 255, 249) ;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="./img/logo-deluxe.jpeg" alt="" height="75"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../BLOQUE PRINCIPAL/proyecto-lenguaje.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Secciones
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color:rgb(206, 255, 249) ;">
-                    <li><a class="dropdown-item" href="../Proyecto Web/Ropa.html">Sección Ropa</a></li>
-                    <li><a class="dropdown-item" href="../">Sección Calzado</a></li>
-                    <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/index.html">Cinema HUB</a></li>
+            <a class="navbar-brand" href="../index.html"><img src="./img/logo-deluxe.jpeg" alt="" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Secciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"
+                            style="background-color:rgb(206, 255, 249) ;">
+                            <li><a class="dropdown-item" href="../Proyecto Web/Ropa.html">Sección Ropa</a></li>
+                            <li><a class="dropdown-item" href="../LENGUAJE 2.0/akane.html">Sección Calzado</a></li>
+                            <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/index.html">Cinema HUB</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./atencion.html" tabindex="-1"
+                            aria-disabled="true">Contáctos</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./atencion.html" tabindex="-1" aria-disabled="true">Contáctos</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-info" type="submit">Buscar</button>
-            </form>
-          </div>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!--Aqui esta lo nuevo del nav-->
+                    <li class="nav-item logged-out">
+                        <a class="nav-link me-auto active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#InicioSesionModal">Acceder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-out active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#RegistroModal">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-auto active logged-in" href="#" id="logout">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-  <br><br><br><br><br>
-  <h1>Conoce nuestras oficinas</h1>
 
-  <div class="container">
-    <form action="">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6">
-                <img src="img/c1.jpg" alt="" class="img-fluid">
-
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6">
-
-                <h3> <span class="titulo"> Deluxe<br>Caminos del Inca</span></h3>
-
-                <p"><b>Dirección:</b> Avenida Javier Prado Este 2050</p>
-                    <p><b>Horarios de Atención:</b> Lunes-Viernes 9:00 - 22:00 y Sábado-Domingo 9:00 - 20:00 </p>
-                    <p><b>Teléfono:</b>923561478</p>
-                    <p><b>Correo:</b>caminosatc@deluxe.com.pe</p>
-
-
-                    <a href="https://www.google.com/maps/place/12%C2%B007'50.7%22S+76%C2%B058'59.1%22W/@-12.1310433,-76.9831811,15z/data=!4m5!3m4!1s0x0:0x9dd0034d385f8113!8m2!3d-12.1307513!4d-76.9830697?hl=es"
-                        class="botonmapa"> Ver en mapa <i class="fa-solid fa-location-dot"></i></a>
-
+    <!-- Modal -->
+    <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="Registro-form">
+                        <div class="form-group">
+                            <input type="text" id="Registro-email" class="form-control" placeholder="Correo" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" id="Registro-contraseña" class="form-control"
+                                placeholder="contraseña" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </form>
-</div>
-<br><br><br>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="InicioSesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="InicioSesion-form">
+                        <div class="form-group">
+                            <input type="text" id="IniciarSesion-email" class="form-control" placeholder="Correo"
+                                required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" id="InicioSesion-contraseña" class="form-control"
+                                placeholder="contraseña" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <h1>Conoce nuestras oficinas</h1>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/c1.jpg" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+
+                    <h3> <span class="titulo"> Deluxe<br>Caminos del Inca</span></h3>
+
+                    <p"><b>Dirección:</b> Avenida Javier Prado Este 2050</p>
+                        <p><b>Horarios de Atención:</b> Lunes-Viernes 9:00 - 22:00 y Sábado-Domingo 9:00 - 20:00 </p>
+                        <p><b>Teléfono:</b>923561478</p>
+                        <p><b>Correo:</b>caminosatc@deluxe.com.pe</p>
+
+
+                        <a href="https://www.google.com/maps/place/12%C2%B007'50.7%22S+76%C2%B058'59.1%22W/@-12.1310433,-76.9831811,15z/data=!4m5!3m4!1s0x0:0x9dd0034d385f8113!8m2!3d-12.1307513!4d-76.9830697?hl=es"
+                            class="botonmapa"> Ver en mapa <i class="fa-solid fa-location-dot"></i></a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><br><br>
     <div class="container">
         <form action="">
             <div class="row">
@@ -106,7 +182,7 @@
     </div>
     <br><br><br><br>
 
-<!-- formulario -->
+    <!-- formulario -->
     <h1> <b> Agenda tu cita y olvídate de las colas </b></h1>
     <div class="formulario">
         <form action="">
@@ -161,43 +237,44 @@
     <br><br><br><br>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="footer-seccion">
-                  <img src="./img/logo-deluxe.jpeg" alt="Cinema CINEMA-HUB" class="img-fluid" width="200">
-                  
-              </div>
-              <div class="footer-seccion">
-                  <h4>Nuestras Tiendas</h4>
-                  <ul>
-                    <li><a href="#">Calzado</a></li>
-                    <li><a href="../Proyecto Web/Ropa.html">Ropa</a></li>
-                    <li><a href="../videojuegos/videojuegos.html">Videojuego</a></li>
-                    <li><a href="../CINEMA-HUB 2.0/index.html">CINEMA-HUB</a></li>
-                  </ul>
-              </div>
-              <div class="footer-seccion">
-                  <h4>Legal</h4>
-                  <ul>
-                      <li><a href="#">Libro de Reclamaciones</a></li>
-                      <li><a href="#">Terminos y condiciones</a></li>
-                      <li><a href="#">Politicas de privacidad</a></li>
-                      
-                  </ul>
-              </div>
-              <div class="footer-seccion">
-                  <h4>Siguenos</h4>
-                  <div class="social">
-                      <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                      <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-                      <a href="https://pe.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-<script src="./js/bootstrap.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="footer-seccion">
+                    <img src="./img/logo-deluxe.jpeg" alt="Cinema CINEMA-HUB" class="img-fluid" width="200">
+
+                </div>
+                <div class="footer-seccion">
+                    <h4>Nuestras Tiendas</h4>
+                    <ul>
+                        <li><a href="#">Calzado</a></li>
+                        <li><a href="../Proyecto Web/Ropa.html">Ropa</a></li>
+                        <li><a href="../videojuegos/videojuegos.html">Videojuego</a></li>
+                        <li><a href="../CINEMA-HUB 2.0/index.html">CINEMA-HUB</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Libro de Reclamaciones</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h4>Siguenos</h4>
+                    <div class="social">
+                        <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pe.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
