@@ -19,6 +19,7 @@ signInForm.addEventListener("submit", async e => {
         modal.hide()
 
         showMessage("BIENVENIDO "+ credentials.user.email)
+        
 
     } catch (error) {
         if (error.code === "auth/wrong-password"){
