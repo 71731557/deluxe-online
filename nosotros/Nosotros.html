@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSOTROS</title>
+    <link rel="shortcut icon" href="../Proyecto Web/Img/icon-pag.jpeg">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--JS BOOSTRAP-->
+    <script src="js/bootstrap.js"></script>
+    <!--TOASTIFY JS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./nosotros.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/5e72172778.js" crossorigin="anonymous"></script>
+    <script defer src="./app.js"></script>
+    <script src="../Proyecto Web/js/main.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:rgb(206, 255, 249) ;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../Proyecto Web/Img/logo-deluxe.jpeg" alt="" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../nosotros/Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Secciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"
+                            style="background-color:rgb(206, 255, 249) ;">
+                            <li><a class="dropdown-item" href="../Proyecto Web/Ropa.html">Sección Ropa</a></li>
+                            <li><a class="dropdown-item" href="../LENGUAJE 2.0/akane.html">Sección Calzado</a></li>
+                            <li><a class="dropdown-item" href="../videojuegos/videojuegos.html">Sección Videojuegos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../CINEMA-HUB 2.0/cinema.html">Cinema HUB</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../deluxe/atencion.html" tabindex="-1"
+                            aria-disabled="true">Contáctos</a>
+                    </li>
+
+                </ul>
+                <a class="navbar-brand" href="#"><img id="verCarrito" src="./Img/carrito.png " alt="" height="50"><span
+                        id="cantidadCarrito" class="cantidadCarrito"></span></a>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!--Aqui esta lo nuevo del nav-->
+                    <li class="nav-item logged-out">
+                        <a class="nav-link me-auto active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#InicioSesionModal">Acceder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logged-out active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#RegistroModal">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-auto active logged-in" href="#" id="logout">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="Registro-form">
+                        <div class="form-group">
+                            <input type="text" id="Registro-email" class="form-control" placeholder="Correo" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" id="Registro-contraseña" class="form-control"
+                                placeholder="contraseña" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="InicioSesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="InicioSesion-form">
+                        <div class="form-group">
+                            <input type="text" id="IniciarSesion-email" class="form-control" placeholder="Correo"
+                                required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" id="InicioSesion-contraseña" class="form-control"
+                                placeholder="contraseña" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="main-banner">
+        <div>
+            <div class="adjuntar">
+                <h2 class="titulo"><strong>Nosotros</strong></h2>
+                <p class="parrafo">Deluxe Online, las mejores ofertas en todo tipo de accesorios.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container nuestro_b">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 class="titulo_destacado t_destac">MARCAS DE ROPA PATROCINADORAS<br>
+                    <h3>LAS MEJORES MARCAS A NIVEL NACIONAL E INTERNACIONAL - TODO EN UNA SOLA TIENDA</h3>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- BOTON -->
+    <div class="Carousel">
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- IMAGENES -->
+
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/logo7.png" alt="Image">
+
+                                <h1>Pietà</h1>
+                                <p>Marca de ropa peruana</p>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/logo6.png" alt="Image">
+                            </picture>
+                            <h1>Wasi Perú</h1>
+                            <p>Envíos Gratis en el día ✓</p>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/logo5.jpeg" alt="Image">
+                            </picture>
+                            <h1>Karlie Kloss</h1>
+                            <p>Ropa y atuendos de Karlie</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/logo4.png" alt="Image">
+                            </picture>
+                            <h1>PRADA</h1>
+                            <p>Prada es una firma de moda italiana</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/logo3.png" alt="Image">
+                            </picture>
+                            <h1>Dolce & Gabbana</h1>
+                            <p>Es una firma de moda italiana</p>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/logo2.png" alt="Image">
+                            </picture>
+                            <h1>ZARA</h1>
+                            <p>Lo último en moda, zapatos y accesorios</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/logo1.jpg" alt="Image">
+                            </picture>
+                            <h1>CHANEL</h1>
+                            <p>Es una casa de modas francesa</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/nike.jpg" alt="Image">
+                            </picture>
+                            <h1>NIKE</h1>
+                            <p>Solo hazlo
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="./img/adidas.png" alt="Image">
+                            </picture>
+                            <h1>ADIDAS</h1>
+                            <p>Nada es imposible</p>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <h1 style="font-family:'Lato', sans-serif; margin-left: 100px; margin-right: 150px; font-size: 22px; border: 5px solid rgb(19, 17, 19); border-radius: 5px; padding: 10px;  display: block; position: relative;">Tienda virtual con sedes en distintas partes nacionales e internacionales te damos el mejor producto en la puerta de tu casa ,contamos con el respaldo de disferentes marcas de calzado ,marcas dedicadas al gaming y en general todo lo que necesites.
+    <br><br> Empresa dedicada a la venta de productos desde 2015 con las de 6 años de experiencia
+    <br><br> Contamos con asesores que estaran muy felices de atenderte</h1>
+    <br><br><br>
+    <!-- ZONA GAMER ///////////////////// -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 class="titulo_destacado t_destac">ZONA GAMER<br>
+                    <h3>TODO TIPO DE ACCESORIOS , COMPONENTES PARA TU PC , CONSOLAS Y TODO LO QUE NECESITES</h3>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- BOTON -->
+    <div class="Carousel">
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- IMAGENES -->
+
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/ryzer.webp" alt="Image">
+
+                                <h1>RAZER</h1>
+                                <p>Jugamos duro, Jugamos limpio </p>
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g1.jpg" alt="Image">
+                            </picture>
+                            <h1>MSI</h1>
+                            <p>"Innovación con estilo"</p>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g2.jpg" alt="Image">
+                            </picture>
+                            <h1>CORSAIR</h1>
+                            <p>líder mundial en equipos y componentes de alto rendimiento</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g3.jpg" alt="Image">
+                            </picture>
+                            <h1>PLAYSTATION</h1>
+                            <p>Jugar no tiene límites</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g4.png" alt="Image">
+                            </picture>
+                            <h1>ASUS</h1>
+                            <p>"Inspiring Innovation • Persistent Perfection"</p>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g5.png" alt="Image">
+                            </picture>
+                            <h1>NVIDIA</h1>
+                            <p>21 días. 21 años</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g6.png" alt="Image">
+                            </picture>
+                            <h1>RADEON</h1>
+                            <p>líder de la computación adaptable y de alto rendimiento</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/g7.jpg" alt="Image">
+                            </picture>
+                            <h1>EVGA</h1>
+                            <p>La máquina de conducción definitiva</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small></small><!-- FONDO DE IMAGEN -->
+                            </h4>
+                            <picture>
+                                <img src="img/xbox.webp" alt="Image">
+                            </picture>
+                            <h1>XBOX</h1>
+                            <p>Power your dreams</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/quispe.jpg" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+
+                    <h4> <span class="titulo2"><br>Ingeniero de Sistemas</span></h4>
+
+                    <p><b>Nombre:</b> Jonatan Lozada </p>
+                    <p><b>Carrera:</b> Ingeniero</p>
+                    <p><b>Teléfono:</b> 987234546 </p>
+                    <p><b>Correo:</b> Jonatan202@gmail.com </p>
+
+
+                    <a href="https://www.google.com/maps/place/12%C2%B007'50.7%22S+76%C2%B058'59.1%22W/@-12.1310433,-76.9831811,15z/data=!4m5!3m4!1s0x0:0x9dd0034d385f8113!8m2!3d-12.1307513!4d-76.9830697?hl=es"
+                        class="boton"> Instagram <i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+
+                    <h4> <span class="titulo2"><br>Diseñador Grafico</span></h4>
+
+                    <p><b>Nombre: </b> Anthony Pochori</p>
+                    <p><b>Carrera: </b> Diseñador Grafico </p>
+                    <p><b>Teléfono: </b> 99234582</p>
+                    <p><b>Correo: </b> AntonyPochoclo@gmail.com</p>
+
+                    <a href="https://www.google.com/maps/place/12%C2%B005'20.5%22S+77%C2%B000'15.7%22W/@-12.089022,-77.004357,14z/data=!4m5!3m4!1s0x0:0x17a1e69fcb9f757b!8m2!3d-12.0890224!4d-77.0043566?hl=es"
+                        class="boton"> Instagram <i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/capmili.webp" alt="" class="img-fluid">
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/ang.jpg" alt="" class="img-fluid">
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+
+                    <h4> <span class="titulo2"><br>Programador</span></h4>
+
+                    <p><b>Nombre:</b> Angelo Puitiza </p>
+                    <p><b>Carrera:</b> Programador</p>
+                    <p><b>Teléfono:</b> 947105423 </p>
+                    <p><b>Correo:</b> Angelo0129@gmail.com </p>
+
+
+                    <a href="https://www.google.com/maps/place/12%C2%B007'50.7%22S+76%C2%B058'59.1%22W/@-12.1310433,-76.9831811,15z/data=!4m5!3m4!1s0x0:0x9dd0034d385f8113!8m2!3d-12.1307513!4d-76.9830697?hl=es"
+                        class="boton"> Instagram <i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+
+                    <h4> <span class="titulo2"><br>Experto en Java Script</span></h4>
+
+                    <p><b>Nombre: </b> Jefry </p>
+                    <p><b>Carrera: </b> Programador </p>
+                    <p><b>Teléfono: </b> 934192301</p>
+                    <p><b>Correo: </b> ElProgramador2002@gmail.com</p>
+
+                    <a href="https://www.google.com/maps/place/12%C2%B005'20.5%22S+77%C2%B000'15.7%22W/@-12.089022,-77.004357,14z/data=!4m5!3m4!1s0x0:0x17a1e69fcb9f757b!8m2!3d-12.0890224!4d-77.0043566?hl=es"
+                        class="boton"> Instagram <i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="img/jefry.jpg" alt="" class="img-fluid">
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 style="font-family:'Lato', sans-serif;">MAPA DE NUESTRA UBICACION</h1>
+                    
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=certus lima&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://temp-mailbox.com">temp mail</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>            </div>
+        </form>
+    </div>
+    <br><br>
+
+
+    <script src="./js/reproducciones.js"></script>
+</body>
+
+</html>

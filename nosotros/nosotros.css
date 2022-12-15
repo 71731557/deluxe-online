@@ -1,0 +1,476 @@
+.boton {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid rgb(19, 17, 19);
+    border-radius: 10px;
+    background-color: rgb(238, 123, 238);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.boton:hover {
+    color: black;
+}
+
+/* mensaje,cita y preguntas */
+.botonc {
+    padding: 0.4em;
+    text-decoration: none;
+    border: 2px solid rgb(109, 78, 109);
+    border-radius: 10px;
+    background-color: rgb(153, 122, 153);
+    color: white;
+}
+
+
+
+.botonm {
+    padding: 0.4em;
+    text-decoration: none;
+    border: 2px solid rgb(109, 78, 109);
+    border-radius: 10px;
+    background-color: rgb(172, 149, 172);
+    color: white;
+}
+
+.botonm:hover {
+    color: black;
+}
+
+.contactanos {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px groove rgb(125, 160, 167);
+    background: rgba(174, 241, 243, 0.685);
+    border-radius: 10px;
+}
+
+.cita {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px groove rgb(125, 160, 167);
+    background: rgba(174, 241, 243, 0.685);
+    border-radius: 10px;
+    padding-bottom: 265px;
+
+}
+
+.preguntas {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 5px groove rgb(125, 160, 167);
+    background: rgba(174, 241, 243, 0.685);
+    border-radius: 10px;
+    padding-bottom: 170px;
+}
+
+.contactanos>img {
+    width: 70px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 50%;
+}
+
+.cita>img {
+    width: 70px;
+    padding: 8px;
+    background: rgba(174, 241, 243, 0.685);
+    border-radius: 50%;
+}
+
+.preguntas>img {
+    width: 70px;
+    padding: 8px;
+    background: rgba(174, 241, 243, 0.685);
+    border-radius: 50%;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid rgb(5, 22, 21);
+    border-radius: 5px;
+    background: rgba(174, 241, 243, 0.685);
+
+}
+
+textarea {
+    max-height: 130px;
+    min-height: 130px;
+
+}
+
+/* cuerpo */
+
+.titulo_destacado {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container h3{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.container1 h2{
+    font-family: 'Lato', sans-serif;
+    text-align: initial;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+.t_destac {
+    margin-top: -40px;
+}
+
+
+
+/* hub*/
+.main-banner {
+    position: relative;
+    padding: 1em;
+    background: linear-gradient(to right rgb(0, 0, 243), rgb(0, 0, 250));
+    filter: brightness(0.9);
+    margin-bottom: 100px;
+}
+
+.main-banner::after {
+    content: "";
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(174, 241, 243, 0.685);
+    mix-blend-mode: overlay;
+    /* Funcionar color + imagen (darken)(color-dodge)(overlay)(multiply)(exclusion(saturation)) */
+    opacity: .9;
+}
+
+.main-banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .4;
+}
+
+.adjuntar {
+    text-align: center;
+    position: relative;
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+}
+.titulo2{
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+.parrafo {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+
+
+/* carusel */
+
+
+.slick-track a {
+    text-decoration: none;
+}
+
+.Carousel {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+body.dark .Carousel h2 {
+    color: #FFF;
+    font-size: 27px;
+    line-height: 38px;
+    opacity: .9;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+body.dark .title h1 {
+    color: white;
+    font-size: 27px;
+    line-height: 38px;
+    opacity: .9;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+.slick h1 {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.slick p {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-align: left;
+    margin-top: 12px;
+    opacity: .4;
+
+}
+
+
+/* IMAGENES */
+
+.slick-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 395px;
+    padding: 10px 0px;
+    margin: 1px auto;
+    max-width: 90vw;
+    overflow: hidden;
+
+}
+
+.slick-track {
+    position: relative;
+    top: 2px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick {
+    position: relative;
+    width: 200px;
+    height: 290px;
+    padding: 10px 20px 250px;
+    margin-left: 50px;
+    margin-top: -50px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(17, 12, 12);
+    border-radius: 6px;
+
+
+}
+
+.slick a img {
+    object-fit: cover;
+    height: 170px;
+    width: 170px;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+    margin-top: 10px;
+    margin-left: -5px;
+
+
+}
+
+.slick a img:hover {
+    opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow {
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(248, 10, 10, 0.15);
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, .7);
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-list .slick-next {
+    right: 0px;
+}
+
+/* cuerpo */
+
+main {
+    margin-bottom: 60px;
+    color: white;
+    overflow: hidden;
+}
+
+.container-flex {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 200px;
+}
+
+
+
+.music-card img {
+    padding: 15px;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    right: 30px;
+    margin: 40px;
+    background-color: rgb(34, 33, 33);
+    box-shadow: 0px 1px 1px 2px rgb(34, 33, 33);
+    rotate: 25deg;
+}
+
+.music-card p {
+    rotate: 25deg;
+    transform: translateY(-10px) translateX(-70px);
+    color: rgb(34, 33, 33);
+    font-size: 27px;
+    transition: all 0.3s ease;
+}
+
+.dark .music-card p {
+    rotate: 25deg;
+    transform: translateY(-10px) translateX(-70px);
+    color: white;
+    font-size: 27px;
+    transition: all 0.3s ease;
+}
+
+
+/* RESPONSIVE MEDIA  */
+
+@media all and (max-width: 700px) {
+
+
+    .sidenav span {
+        display: none;
+    }
+
+    .menulink i {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menulink a:first-child {
+        border: none;
+        padding: 0;
+    }
+
+    .cookie {
+        display: none;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .music-card img {
+
+        padding: 10px;
+        height: 150px;
+        background-color: rgb(22, 22, 22);
+    }
+
+    .container-flex {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .music-card p {
+        margin-left: 0px;
+    }
+
+    .title h1 {
+        margin-right: 100px;
+    }
+
+    .container-flex {
+        margin-left: 100px;
+    }
+}
+
+/* carrusel */
+.titulos {
+    color: #0d5d78;
+    font-size: 27px;
+    line-height: 38px;
+    opacity: .9;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+.Carousel h2 {
+    color: #0d5d78;
+    font-size: 27px;
+    line-height: 38px;
+    opacity: .9;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+
+main .title h1 {
+    color: #0d5d78;
+    font-size: 27px;
+    line-height: 38px;
+    opacity: .9;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+.container img{
+    width: 300px;
+    margin: 30px
+
+}
+.container p{
+    font-family: 'Lato', sans-serif;
+
+}

@@ -14,7 +14,6 @@ onAuthStateChanged(auth, async (user) => {
    
     if (user) {
         verCarrito.style.display = "block"
-        showMessage("Ahora ya puede empezar a comprar")
         
         
     } else {
