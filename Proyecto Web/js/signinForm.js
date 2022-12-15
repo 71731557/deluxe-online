@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 import { auth } from "./firebase.js";
-import { showMessage } from "./showMessage.js"
+import { showMessage } from "./showMessage.js";
 
 const signInForm = document.querySelector("#InicioSesion-form");
 
@@ -19,7 +19,8 @@ signInForm.addEventListener("submit", async e => {
         modal.hide()
 
         showMessage("BIENVENIDO "+ credentials.user.email)
-        
+
+
 
     } catch (error) {
         if (error.code === "auth/wrong-password"){

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DeluxeOnline</title>
   <link rel="stylesheet" href="./css/atencion.css">
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
   <!--BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -58,6 +58,8 @@
             <a class="nav-link active" href="./atencion.html" tabindex="-1" aria-disabled="true">Contáctos</a>
           </li>
         </ul>
+        <a class="navbar-brand" href="#"><img id="verCarrito" src="../Proyecto Web/Img/carrito.png" alt=""
+            height="50"><span id="cantidadCarrito" class="cantidadCarrito"></span></a>
         <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <!--Aqui esta lo nuevo del nav-->
           <li class="nav-item logged-out">
@@ -173,35 +175,43 @@
   <div class="container">
     <form action="">
       <div class="row">
-
+        <!--Seccion Escribenos un mensaje-->
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-          <ul class="contactanos">
-            <img src="./img/mensaje.png" alt="icono mensaje" class="img-fluid">
-            <h3> Déjanos un mensaje </h3>
-            <p>Tienes alguna recomendación. Escríbenos</p>
-            <button id="btn-abrir-modal">Enviar un mensaje</button>
 
-            <dialog id="modal">
-              <img src="./img/logo-deluxe.jpeg" alt="" class="img-fluid" width="200px">
-              <br>
-              <label for="nombre">Nombre:
-                <input type="text" id="nombre" required>
-              </label>
-              <label for="correo">Correo Electrónico
-                <input type="email" id="correo" required>
-              </label>
-              <label for="numero">Número Telefónico
-                <input type="text" id="numero" maxlength="9" required>
-              </label>
-              <label for="mensaje">Escriba su mensaje:
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </label>
-
-              <input type="submit" value="Enviar" class="botonm">
-
-              <button id="btn-cerrar-modal">Cancelar</button>
-            </dialog>
+          <form id="task-form">
+            <div class="container">
+              <ul class="contactanos">
+                <img src="./img/mensaje.png" alt="icono mensaje" class="img-fluid">
+                <h3> Déjanos un mensaje </h3>
+                <p>Tienes alguna recomendación. Escríbenos</p>
+                <button id="btn-abrir-modal">Enviar un mensaje</button>
+                
+                <dialog id="modal">
+                  <img src="./img/logo-deluxe.jpeg" alt="" class="img-fluid" width="200px">
+                  <br>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input name="" type="text" id="nombre" required>
+                      
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
+                      
+                    <label for="numero">Número Telefónico</label>
+                    <input type="text" id="numero" maxlength="9" required>
+                      
+                    <label for="mensaje">Escriba su mensaje:</label>
+                    <textarea id="mensaje" cols="30" rows="10"></textarea>
+                      
+                    <button type="submit" id="presion" class="botonm">Enviar</button>
+                    <button id="btn-cerrar-modal">Cancelar</button>
+                    
+                  </dialog>
+                
+              </ul>
+            </div>
+          </form>
         </div>
+        <!--Seccion Escribenos un mensaje-->
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
           <ul class="cita">
             <img src="./img/calendario.png" alt="icono calendario" class="img-fluid">
@@ -351,6 +361,10 @@
       </div>
     </div>
   </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script> -->
   <script src="./js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./js/app.js"></script>

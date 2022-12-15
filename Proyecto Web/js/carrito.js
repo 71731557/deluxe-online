@@ -21,9 +21,8 @@ productosNike.forEach((product) => {
     shopContent.append(content);
 
     let comprar = document.createElement("button")
-    comprar.className = "btn btn-block btn-primary agregar-carrito d-none";
+    comprar.className = "btn btn-block btn-primary agregar-carrito";
     comprar.innerText = "comprar";
-    
 
     content.append(comprar);
 
@@ -61,9 +60,9 @@ productosAdidas.forEach((product) => {
     shopContent2.append(content);
 
     let comprar = document.createElement("button")
-    comprar.className = "btn btn-block btn-primary agregar-carrito d-none";
+    comprar.className = "btn btn-block btn-primary agregar-carrito";
     comprar.innerText = "comprar";
-
+    
     content.append(comprar);
 
     comprar.addEventListener("click", () =>{
@@ -100,7 +99,7 @@ productosGucci.forEach((product) => {
     shopContent3.append(content);
 
     let comprar = document.createElement("button")
-    comprar.className = "btn btn-block btn-primary agregar-carrito d-none";
+    comprar.className = "btn btn-block btn-primary agregar-carrito";
     comprar.innerText = "comprar";
 
     content.append(comprar);
@@ -139,7 +138,7 @@ productosJordan.forEach((product) => {
     shopContent4.append(content);
 
     let comprar = document.createElement("button")
-    comprar.className = "btn btn-block btn-primary agregar-carrito d-none";
+    comprar.className = "btn btn-block btn-primary agregar-carrito";
     comprar.innerText = "comprar";
 
     content.append(comprar);
